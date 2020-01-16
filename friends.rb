@@ -18,10 +18,10 @@ def delete_friend(person, friend)
   person[:friends].delete(friend)
 end
 
-def find_total_money(people, money)
-
+def find_total_money(people)
+total_money = 0
   for money in people
-    money += money
+    total_money += money[:monies]
   end
-return total
+return total_money
 end

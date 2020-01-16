@@ -114,7 +114,6 @@ class TestFriends < MiniTest::Test
   # (hint: use the @git people array, remember how we checked the total number of eggs yesterday?)
 
   def test_find_total_of_people_money()
-    variable = person[:monies]
     result = find_total_money(@people)
     assert_equal(143, result)
   end
