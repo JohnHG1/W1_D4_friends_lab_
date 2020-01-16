@@ -20,8 +20,8 @@ end
 
 def find_total_money(people)
 total_money = 0
-  for money in people
-    total_money += money[:monies]
+  for person in people
+    total_money += person[:monies]
   end
 return total_money
 end
